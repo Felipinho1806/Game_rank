@@ -1,4 +1,4 @@
-
+package com.olibyte_felipinho.game_ranking;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,7 +21,7 @@ public class InsertBd {
         Scanner sc = new Scanner(System.in);
 
         while (estaOk != 1) {
-                
+
             Connection conexao = null;
             PreparedStatement pstmt = null;
             ResultSet rs = null;
@@ -48,9 +48,9 @@ public class InsertBd {
                 rs = pstmt.executeQuery();
 
                 rs.next();
-                if(rs.getInt(1) > 0) {
+                if (rs.getInt(1) > 0) {
                     System.out.println("Esse email já está cadastrado!");
-                    
+
                 } else {
                     estaOk = 1;
 
@@ -61,7 +61,7 @@ public class InsertBd {
                     pstmt = conexao.prepareStatement(inserirSQL);
 
                     // Definir os valores dos parâmetros
-                    pstmt.setString(1, FirstName);  // 1º parâmetro
+                    pstmt.setString(1, FirstName); // 1º parâmetro
                     pstmt.setString(2, LastName); // 2º parâmetro
                     pstmt.setString(3, Email); // 3º parâmetro
                     pstmt.setString(4, Password); // 4º parâmetro
@@ -88,8 +88,8 @@ public class InsertBd {
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
-            }     
             }
-            sc.close();
         }
+        sc.close();
+    }
 }

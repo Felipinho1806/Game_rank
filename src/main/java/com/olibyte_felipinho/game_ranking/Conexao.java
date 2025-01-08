@@ -1,4 +1,4 @@
-
+package com.olibyte_felipinho.game_ranking;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
