@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #201b2c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #5465FF;
+    margin-bottom: 5rem;
+    font-family: "Press Start 2P", cursive;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f2841;
+    padding: 3em 3em;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.form p {
+    color: #5465FF;
+    margin-bottom: 1rem;
+    font-size: 16pt;
+    font-family: "Press Start 2P", cursive;
+}
+
+.textField {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 0;
+    color: #846e91;
+}
+
+.textField input {
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    background-color: transparent;
+    color: #5465FF;
+    font-size: 12pt;
+    outline: none;
+}
+
+.textField span {
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.textField input:valid~span,
+.textField input:focus~span {
+    color: #5465FF;
+    transform: translateY(-35px);
+    font-size: 0.75em;
+}
+
+.textField i {
+    width: 100%;
+    height: 2px;
+    background: #5465FF;
+    border-radius: 0.2em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: #5465FF;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.form button {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #5465FF;
+    font-weight: 800;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    transition: all 0.2s ease;
+}
+
+.form button:hover {
+    background-color: #5465FF;
+    box-shadow: 0px 10px 40px #5465FF;
+}
+
+/* @media only screen and (max-width: 950px) {
+    .form {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .links a {
+        font-size: 14px;
+    }
+
+    .textField input {
+        font-size: 6pt;
+    }
+
+    .textField span {
+        font-size: 12pt;
+    }
+
+    .textField input:valid~span,
+    .textField input:focus~span {
+        color: #5465FF;
+        transform: translateY(-25px);
+        font-size: 0.70em;
+    }
+} */
