@@ -4,14 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/styles.css" />
-    <title>Login</title>
+    <title>Cadastro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <h1>Bem Vindo ao Game Ranking</h1>
-    <form class="form" action="/login" method="post">
+    <form class="form" action="/cadastro" method="post">
         <p>Login</p>
+        <div class="textField">
+            <input type="text" name="firstName" required />
+            <span><span class="placeholder">Nome</span></span>
+            <i></i>
+        </div>
+        <div class="textField">
+            <input type="text" name="lastName" required />
+            <span><span class="placeholder">Sobrenome</span></span>
+            <i></i>
+        </div>
         <div class="textField">
             <input type="email" name="email" required />
             <span><span class="placeholder">Email</span></span>
@@ -22,13 +32,7 @@
             <span><span class="placeholder">Senha</span></span>
             <i></i>
         </div>
-        <div class="links">
-            <a href="#">Esqueceu a senha?</a>
-        </div>
-        <div class="links">
-            <a href="cadastro.html">Não possui cadastro?</a>
-        </div>
-        <button type="submit">Login</button>
+        <button type="submit">Concluir cadastro</button>
     </form>
 
 </body>
